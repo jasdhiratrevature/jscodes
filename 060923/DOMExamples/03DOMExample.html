@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+
+</head>
+<body>
+   <h2 id="myH1">Click to Add another Heading</h2>
+   <script>
+    var myHeading=document.getElementById("myH1")
+    myHeading.addEventListener("click",handleClick)
+
+    function handleClick(){
+        var newHeading=document.createElement("h1");
+        newHeading.innerHTML="This is dynamically created"
+        newHeading.style.color="red";
+        document.body.append(newHeading)
+        //myHeading.insertBefore(newHeading)
+
+    }
+   </script>
+       
+</body>
+</html>

@@ -1,0 +1,26 @@
+<head>
+    <script>
+    const data = {
+        "id": 202,
+        "name": "Jasdhir",
+        "password": "123"
+}
+      //fetch("http://localhost:8080/emprest/webapi/personapi/persons",{
+       fetch("http://localhost:3000/users",{
+        method: "POST",
+      headers: [
+        ["Content-Type", "application/json"]
+      ],
+      credentials: "include",
+      body: JSON.stringify(data)
+    })
+      
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+    </script>
+    </head>

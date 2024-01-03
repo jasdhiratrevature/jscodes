@@ -1,0 +1,27 @@
+<script>
+function doHomework(subject, anyVar)
+ {
+// use ` ` (ticks) Template literals
+alert(`Starting my ${subject} homework.`);
+anyVar(); // alertFinished
+}
+
+function alertFinished(){alert('Finished Project ');}
+doHomework('Project 0', alertFinished); // method call
+
+setTimeout(myFunction, 5000);
+
+function myFunction() {
+  document.getElementById("demo2").innerHTML = "JavaScript Call Backs . . . . !!";
+}
+
+setTimeout(function() {  
+    document.getElementById("demo2").innerHTML ="This message is shown after 10 seconds";
+}, 10000);
+
+setTimeout(() => { 
+    document.getElementById("demo2").innerHTML ="This message is shown after 15 seconds";
+}, 15000);
+</script>
+
+<h1 id="demo2"></h1>

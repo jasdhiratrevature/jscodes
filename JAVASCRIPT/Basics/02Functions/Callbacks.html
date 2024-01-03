@@ -1,0 +1,11 @@
+<script>
+    function doHomework(subject, anyVar)
+ {
+// use ` ` (ticks) Template literal
+alert(`Starting my ${subject} homework.`);
+anyVar(); // alertFinished
+}
+
+function alertFinished(){alert('Finished Project ');}
+doHomework('Project 0', alertFinished); // method call
+</script>

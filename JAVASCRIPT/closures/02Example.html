@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Demo</title>
+    <script>
+function youSayGoodBye() {
+
+alert("Good Bye!");
+
+function andISayHello() {
+    alert("Hello!");
+}
+
+return andISayHello;
+}
+</script>
+</head>
+<body>
+    <h1> Closure Demo</h1>
+    <script>
+        var something = youSayGoodBye();
+        something();
+    </script>
+
+</body>
+</html>

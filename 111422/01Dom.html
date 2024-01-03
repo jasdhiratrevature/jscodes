@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>DOM Example</title>
+</head>
+<body>
+    <button id="b1">Click Me</button>
+    <script>
+        document.getElementById("b1").addEventListener("click",doSomeMagic);
+        
+
+        function doSomeMagic(){
+           // alert("It Works !!!")
+           var divElement=document.createElement("div");
+           divElement.innerHTML="<h1>Hello World !!</h1>"; // can be fetched using fetch API 
+           document.body.appendChild(divElement);
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // var somedata=document.getElementById("userId").value
+        const data = {
+            "id": 212,
+            "name": "Udhaya",
+            "password": "123456"
+        }
+        fetch('http://localhost:3000/users/',{
+            method:'POST',
+            headers:[
+                ["Content-Type","application/json"]
+            ],
+            credentials:"include",
+            body:JSON.stringify(data)
+        }).then(response=>{
+            response.json();
+        }).then(data=>{
+            console.log('success',data)
+        }).catch(error=>{
+            console.log("Error :: ",error)
+        })
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

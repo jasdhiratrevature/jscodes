@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get Element By Id...</title>
+</head>
+<body>
+    <h2 id="my1">This is a Sample Heading</h2>
+    <h2 id="my2">This Content Will Change</h2>
+    <button id="btn1">Click Me</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click",functionToChange);
+
+        function functionToChange(){
+            alert("It Works !!!")
+            var targetElement= document.getElementById("my2")
+           targetElement.innerHTML=
+                        document.getElementById("my1").innerHTML+"It Works"
+        }
+    </script>
+</body>
+</html>

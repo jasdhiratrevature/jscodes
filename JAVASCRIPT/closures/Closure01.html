@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Demo</title>
+    <script>
+     function OuterFunction() {
+            var outerVariable = 100;
+                    
+            function InnerFunction() {
+                alert(outerVariable);
+                }
+
+        return InnerFunction;
+    }
+var innerFunc = OuterFunction();
+
+innerFunc(); // 100
+
+function Counter() {
+    var counter = 0;
+
+    function IncreaseCounter() {
+        return counter += 1;
+    };
+
+    return IncreaseCounter;
+}
+
+var counter = Counter();
+alert(counter()); // 1
+alert(counter()); // 2
+alert(counter()); // 3
+alert(counter()); // 4
+</script>
+</head>
+<body>
+    <h1> Closure Demo</h1>
+
+</body>
+</html>

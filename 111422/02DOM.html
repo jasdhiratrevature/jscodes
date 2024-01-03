@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM Example 2</title>
+</head>
+<body>
+    <p class="c1">This is Para 1</p>
+    <p>This is Para 2</p>
+    <h2 class="c1">This is Heading 2</h2>
+    <h3>This is heading 3</h3> 
+    <button id="b1">Click Me</button>
+    <script>
+        document.getElementById("b1").addEventListener("click", myFunction);
+        function myFunction(){
+         //   var x=document.getElementsByTagName("p")
+         var x=document.getElementsByClassName("c1")
+            for(i=0;i<x.length;i++){
+            x[i].style.backgroundColor="red"
+            }
+        }
+    </script>
+</body>
+</html>

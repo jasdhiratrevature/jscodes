@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example 01</title>
+    <script>
+        function handleClick(){
+            //alert("Button Clicked from a Script . . .")
+           // var myElement=document.getElementById("myh1");
+           // myElement.textContent="Changed dynamically by user Action"
+           //var headings=document.getElementsByTagName("h1");
+           var headings=document.getElementsByClassName("myH1")
+           headings[1].textContent="Changed !"
+
+            var myP=document.getElementById("myP1");
+            myP.innerHTML="<b>The Para Changed and in Bold</b>"
+        }
+    </script>
+</head>
+<body>
+    <h1 class="myH1">This is Heading One . . .  . .</h1>
+    <h1 class="myH1">This is Heading One Again ....</h1>
+    <p id="myP1">This is Paragraph</p>
+
+    <button onclick="handleClick()">Click Me </button>
+</body>
+</html>

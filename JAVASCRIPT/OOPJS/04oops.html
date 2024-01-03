@@ -1,0 +1,16 @@
+<html>
+    <script>
+    var Animal={
+      name:'foo',
+      age:9
+    }
+    var Dog={
+      owner:'kkkk',
+      canRun:true
+    }
+Dog.__proto__=Animal;
+    alert(Dog.name)
+    for(let p in Dog)
+      alert(p)
+    </script>
+</html>

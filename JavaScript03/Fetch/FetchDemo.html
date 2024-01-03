@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+background-color: red;
+}
+</style>
+<script src="allDataScriptFetch.js"></script>
+    <title>Fetch Demo...</title>
+</head>
+<body>
+    <h3> Click The Button to Get All Students .....</h3>
+    <button type="button" onclick="getAllStudents()">Click Me</button>
+    <br/><br/>
+    <div id="allDataDiv">
+        Result Goes Here
+    </div>
+    <hr/>
+    <h1> Rest of the Page</h1>
+    <hr/>
+    
+        Enter Student Id : 
+        <input type="text" id="dataInput"/><br/>
+        <button type="button" id="getData">Get Data</button><br/>
+        <hr/>
+        <div id="restData">This is where Data will come from REST API</div>
+        <hr/>
+        <h2>Rest of the Section</h2>
+        <script src="getDataScriptFetch.js"></script>
+</body>
+</html>

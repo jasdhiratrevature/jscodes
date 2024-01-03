@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation....</title>
+</head>
+<body>
+    <h2 id="myH2">DOM Manipulation</h2>
+    
+    <script>
+        var myHead=document.getElementById("myH2");
+        myHead.addEventListener("click",myBtnFunction);
+
+        function myBtnFunction(){
+            alert("It Works ");
+            var myHead2=document.createElement("h2");
+            myHead2.innerHTML="This is created on button click";
+            myHead2.style.color="red";
+            document.body.append(myHead2);
+        }
+
+    </script>
+</body>
+</html>

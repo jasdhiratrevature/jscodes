@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="message">Your Message is here . .. .</h3>
+    <input type="text" name="num1" id="num1" 
+            placeholder="Enter number between 5 and 10"/>
+    <button onclick="handleClick()">Click Me</button>
+    <script>
+        function handleClick(){
+            var message=document.getElementById("message");
+           var myNum=document.getElementById("num1").value;
+          try{
+                if(myNum==='') throw "Cannot be Blank"
+                if(isNaN(myNum)) throw "Is not a Number"
+                if(myNum>10) throw "is out of Range"
+                if(myNum<5) throw "below Range "
+          }catch(error){
+                message.textContent='Input '+error;
+               
+          }
+        }
+    </script>
+</body>
+</html>

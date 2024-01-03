@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is a Heading</h3>
+    <button id="myButton" type="button">ClickMe</button>
+    <p id="para1">This is Para 1</p>
+    <script>
+        // adding a listener
+        // element.addEventListener(event,function);
+       document.getElementById("myButton").addEventListener("click",myButtonClicked);
+       function myButtonClicked(){
+           alert ("Clicking it Again .....")
+       }
+
+       document.getElementById("para1").addEventListener("mousemove",paraMouseMove);
+       function paraMouseMove(){
+           alert("Mouse Move Event..................")
+       }
+    </script>
+</body>
+</html>

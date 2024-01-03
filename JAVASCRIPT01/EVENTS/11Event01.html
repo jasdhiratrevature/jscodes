@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document Event Listener</title>
+</head>
+<body>
+    <h1 id="myh1">This is heading 1</h1>
+    <p id="demo">This is Para1</p>
+    <button id="b1" type="button">Click Me</button>
+    <script>
+// eventlistener -- element.addEventListener(event,function)
+        document.getElementById("b1").addEventListener("click",myFunction);
+        function myFunction(){
+            document.getElementById("myh1").innerHTML="Jasdhir"
+        }
+
+        ////
+        document.getElementById("demo").addEventListener("click",changeBackColor);
+        function changeBackColor(){
+           document.getElementById("demo").style.backgroundColor="red";
+        }
+
+       
+    </script>
+</body>
+</html>

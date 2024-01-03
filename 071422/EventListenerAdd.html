@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Adding Event Listener</title>
+</head>
+<body>
+    <button id="b1">Click Me</button>
+    <button id="b2">Click Me Again</button>
+    <h2 id="myH2">This is Heading</h2>
+    <script>
+        document.getElementById("b2"). addEventListener("click",buttonClick);
+        function buttonClick(){
+            alert("Button Clicked");
+            document.getElementById("myH2").innerHTML="FRIDAY !!!"
+
+        }
+    </script>
+
+    
+</body>
+
+</html>
